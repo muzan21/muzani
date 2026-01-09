@@ -1,9 +1,10 @@
-const buttons = document.querySelectorAll(".accordion-btn");
+const buttons = document.querySelectorAll(".acc-btn");
 
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    const content = button.nextElementSibling;
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const content = btn.nextElementSibling;
     content.style.display =
       content.style.display === "block" ? "none" : "block";
   });
 });
+
